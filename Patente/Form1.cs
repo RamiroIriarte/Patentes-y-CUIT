@@ -24,6 +24,10 @@ namespace Patente
 
         private void btmCargar_Click(object sender, EventArgs e)
         {
+
+            lblPatente.Text = "";
+            lblCuit.Text = "";
+
             if (rbtmVieja.Checked == true || rbtmNueva.Checked == true)
             {
                 if (mtxtPatente.Text.Length != 6 && mtxtPatente.Text.Length != 7)
